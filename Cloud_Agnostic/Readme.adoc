@@ -210,6 +210,8 @@ Once this is complete, we will proceed with completing the prerequisites for the
 
 == CDP Base Prerequisites [[CDP_Base_Prerequisites]]
 
+Login to the base master node and switch to the root user. 
+
 === Updating the Ansible Hosts file
 
 * The previous script has updated the ansible hosts file with all the IP addresses as mentioned in the *parameters.sh* file. Verify if the entried made are proper. View the */tmp/CDP_PvC/ansible/hosts* file and it should have contents similar to the below. 
