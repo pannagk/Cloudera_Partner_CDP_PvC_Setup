@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WORKDIR="/tmp/CDP_PvC/Cloudera_Partner_CDP_PvC_Setup/Cloud_Agnostic/setup"
+WORKDIR="/tmp/CDP_PvC/Cloudera_Partner_CDP_PvC_Setup/Cloud_Agnostic/setup/playbooks"
 USERNAME="cdpuser"
 PASSWORD="cloudera@123"
 
