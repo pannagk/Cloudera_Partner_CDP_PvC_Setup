@@ -290,7 +290,7 @@ reboot
 * Wait for 1 or 2 minutes, and then log back into the base master. Switch to root user and run the verify_CDP_base_prereq.sh script. 
 [,shell]
 ----
-sudo su -root
+sudo su - root
 cd /tmp/CDP_PvC/Cloudera_Partner_CDP_PvC_Setup/Cloud_Agnostic/setup
 nohup sh 3_verify_CDP_base_prereq.sh > /tmp/CDP_PvC/Logs/verify_CDP_base_prereq.log &
 ----
