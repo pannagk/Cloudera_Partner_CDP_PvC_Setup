@@ -2,6 +2,6 @@
 
 source ./parameters.sh
 
-ansible-playbook -i /tmp/ansible/hosts $WORKDIR/freeipa_setup.yaml
+ansible-playbook -i /tmp/CDP_PvC/ansible/hosts $WORKDIR/freeipa_setup.yaml
 
 echo "FreeIPA packages installation is completed."
