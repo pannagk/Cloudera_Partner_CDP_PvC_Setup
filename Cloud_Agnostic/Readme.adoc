@@ -404,3 +404,10 @@ cd /tmp/CDP_PvC/Cloudera_Partner_CDP_PvC_Setup/Cloud_Agnostic/setup
 NOTE: A GUI pops up during the installation. Keep clicking *Next* during the process and *Accept the license*. 
 
 * The installation will take about 5-10 mins. Once done, you will get a message stating that the installation is successful. 
+
+IMPORTANT: If the installation is interrupted, run the following command on the Cloudera Manager Server host before you retry the installation. 
+[,shell]
+----
+sudo /usr/share/cmf/uninstall-cloudera-manager.sh
+----
+* The log files for the installer are stored in /var/log/cloudera-manager-installer/.
