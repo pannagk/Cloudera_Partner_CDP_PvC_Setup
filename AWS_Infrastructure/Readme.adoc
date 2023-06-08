@@ -879,7 +879,7 @@ image::images/Base/kerb_creds.png[]
 
 * On the first page enter details as below and click continue. 
 
-image::images/Base/kerb_setup_1.1.png[]
+image::images/Base/kerb_setup_1.png[]
 
 * Enable *Manage krb5.conf through Cloudera Manager* option. 
 
