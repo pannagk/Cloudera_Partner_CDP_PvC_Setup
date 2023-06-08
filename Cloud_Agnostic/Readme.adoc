@@ -386,9 +386,7 @@ tail -f -n +1 /tmp/CDP_PvC/Logs/dns_setup.log
 
 == Cloudera Manager Installation
 
-* Login to the *master* node, switch to the root user, and run the script that installs Cloudera Manager with embedded SCM-database. 
-
-NOTE: A GUI pops up during the installation. Keep clicking *Next* during the process and *Accept the license*. 
+* Login to the *master* node, switch to the root user, and run the script that downloads the Cloudera Manager installer file. 
 
 [,shell]
 ----
@@ -396,5 +394,13 @@ sudo su - root
 cd /tmp/CDP_PvC/Cloudera_Partner_CDP_PvC_Setup/Cloud_Agnostic/setup
 ./6_download_installer.sh
 ----
+
+* Run the below command. This will install Cloudera-Manager with embedded SCM-database. 
+[,shell]
+----
+./cloudera-manager-installer.bin
+----
+
+NOTE: A GUI pops up during the installation. Keep clicking *Next* during the process and *Accept the license*. 
 
 * The installation will take about 5-10 mins. Once done, you will get a message stating that the installation is successful. 
