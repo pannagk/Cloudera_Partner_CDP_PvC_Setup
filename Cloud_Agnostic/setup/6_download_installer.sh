@@ -29,5 +29,3 @@ else
     echo "Failed to download the installer file. Please verify the url in parameters.sh file."
     exit 1
 fi
-
-bash ${PWD}/cloudera-manager-installer.bin
