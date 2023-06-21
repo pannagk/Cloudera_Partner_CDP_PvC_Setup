@@ -1,5 +1,12 @@
 ---
   - name: Tasks for remaining prereq on all the hosts
+    hosts: cluster:ipaserver
+    become: yes
+    become_user: root
+    roles:
+    - cdp_base_OS_prereq 
+
+  - name: Tasks for packages installation on all the CDP Base hosts
     hosts: cluster
     become: yes
     become_user: root
@@ -10,10 +17,8 @@
            - ipa-client
            - wget
            - ntp
-    include_role:
-      name: cdp_base_OS_prereq    
-
-  - name: Base Prereq on the freeipa server
+           
+  - name: Tasks for packages installation on the freeipa server
     hosts: ipaserver
     become: yes
     become_user: root
@@ -23,8 +28,6 @@
           name:
            - wget
            - ntp
-    include_role:
-      name: cdp_base_OS_prereq
 
   - name: Reboot the freeipa server
     hosts: ipaserver
