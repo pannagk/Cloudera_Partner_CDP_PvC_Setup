@@ -21,4 +21,4 @@
         shell: echo "$(hostname -i) ipaserver.cdppvcpoc.com" >> /etc/hosts
 
       - name: Reboot the FreeIPA server
-        shell: reboot
+        ansible.builtin.reboot:
