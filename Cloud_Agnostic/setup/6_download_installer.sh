@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eo pipefail
+
 source ./parameters.sh
 
 PWD=$(pwd)
