@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eo pipefail
+
 source ./parameters.sh
 
 enable_pw_less_ssh() {
