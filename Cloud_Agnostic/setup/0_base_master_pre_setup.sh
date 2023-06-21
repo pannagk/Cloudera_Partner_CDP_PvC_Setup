@@ -1,6 +1,6 @@
 #!/bin/bash
 trap 'echo "Setup completed successfully."' 0
-set -e
+set -eo pipefail
 
 source ./parameters.sh
 
