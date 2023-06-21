@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eo pipefail
+
 IPA_ADMIN_PASSWORD=cdp@123456
 DIRECTORY_MANAGER_PASSWORD=cdp@123456
 
