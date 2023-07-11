@@ -527,7 +527,7 @@ vi download_ecs.sh
 ----
 echo "Starting the ECS bits download"
 
-wget -l 0 --recursive r-no-parent -e robots=off -nH --cut-dirs=2 --reject="index.html*" -t 10 https://<CDP_LICENSE_USERNAME>:<CDP_LICENSE_PASSWORD>@archive.cloudera.com/p/cdp-pvc-ds/latest/ -P /var/www/html/cdp-pvc-ds/latest
+wget -l 0 --recursive --no-parent -e robots=off -nH --cut-dirs=2 --reject="index.html*" -t 10 https://<CDP_LICENSE_USERNAME>:<CDP_LICENSE_PASSWORD>@archive.cloudera.com/p/cdp-pvc-ds/latest/ -P /var/www/html/cdp-pvc-ds/latest
 
 RETURN_VAL=$?
 
